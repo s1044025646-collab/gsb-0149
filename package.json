@@ -1,0 +1,22 @@
+{
+  "name": "directional-drill-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local directional-drilling trajectory and inter-well distance evaluation backend (TypeScript, Node, SQLite).",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --experimental-strip-types src/serve.ts",
+    "cli": "node --experimental-strip-types src/cli.ts",
+    "demo": "node --experimental-strip-types scripts/demo.ts",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
